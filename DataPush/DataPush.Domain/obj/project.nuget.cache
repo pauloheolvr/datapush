@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "jnlb/eE90MEM14OpLIAo6UKyrTvolxiZ7//S8Tj/zQD9FPEQtMMBkEKvJnTBa1sL0i3G4iO4XEFPddsL+fZyEg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Eliandro\\Desktop\\Facens\\Fabrica_de_projetos\\datapush\\DataPush\\DataPush.Domain\\DataPush.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Eliandro\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.0\\microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",
+    "C:\\Users\\Eliandro\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Eliandro\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
+    "C:\\Users\\Eliandro\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Eliandro\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "C:\\Users\\Eliandro\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\Eliandro\\.nuget\\packages\\serilog\\2.10.0\\serilog.2.10.0.nupkg.sha512",
+    "C:\\Users\\Eliandro\\.nuget\\packages\\serilog.extensions.logging\\3.0.1\\serilog.extensions.logging.3.0.1.nupkg.sha512",
+    "C:\\Users\\Eliandro\\.nuget\\packages\\serilog.sinks.console\\4.0.0\\serilog.sinks.console.4.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

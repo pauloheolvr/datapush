@@ -1,0 +1,7 @@
+C:\Users\Eliandro\Desktop\Facens\Fabrica_de_projetos\datapush\DataPush\DataPush.API\obj\Debug\net5.0\DataPush.API.csproj.AssemblyReference.cache
+C:\Users\Eliandro\Desktop\Facens\Fabrica_de_projetos\datapush\DataPush\DataPush.API\obj\Debug\net5.0\DataPush.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eliandro\Desktop\Facens\Fabrica_de_projetos\datapush\DataPush\DataPush.API\obj\Debug\net5.0\DataPush.API.AssemblyInfoInputs.cache
+C:\Users\Eliandro\Desktop\Facens\Fabrica_de_projetos\datapush\DataPush\DataPush.API\obj\Debug\net5.0\DataPush.API.AssemblyInfo.cs
+C:\Users\Eliandro\Desktop\Facens\Fabrica_de_projetos\datapush\DataPush\DataPush.API\obj\Debug\net5.0\DataPush.API.csproj.CoreCompileInputs.cache
+C:\Users\Eliandro\Desktop\Facens\Fabrica_de_projetos\datapush\DataPush\DataPush.API\obj\Debug\net5.0\DataPush.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Eliandro\Desktop\Facens\Fabrica_de_projetos\datapush\DataPush\DataPush.API\obj\Debug\net5.0\DataPush.API.MvcApplicationPartsAssemblyInfo.cache

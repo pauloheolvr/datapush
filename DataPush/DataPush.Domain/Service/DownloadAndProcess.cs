@@ -95,7 +95,7 @@ namespace DataPush.Domain.Entities
             return null;
         }
 
-        private string JsonToEncodedString(object json) =>
+        private static string JsonToEncodedString(object json) =>
             Convert.ToBase64String(Encoding.UTF8.GetBytes(JsonSerializer.Serialize(json)));
     }
 }

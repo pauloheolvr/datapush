@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "eIWskbs3jrekuZvK95GJO2rHwhUaHDFgsZ4/PqCG5UsanintMUMrELfexEsfcFh2gRMS43OKCC98/5FmQCSiFw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Eliandro\\Desktop\\Facens\\Fabrica_de_projetos\\datapush\\DataPush\\DataPush.API\\DataPush.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Eliandro\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Eliandro\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Eliandro\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\Eliandro\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\Eliandro\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\Eliandro\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}

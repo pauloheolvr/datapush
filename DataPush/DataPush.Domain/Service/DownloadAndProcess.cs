@@ -3,6 +3,7 @@ using DataPush.Infra.Sql.Repositories;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -32,15 +33,17 @@ namespace DataPush.Domain.Entities
         private IEnumerable<Company> FetchDataFromB3()
         {
             FetchListedCompanies();
+            var stopwatch = new Stopwatch();
             if (_listedCompany != null && _listedCompany.Companies != null && _listedCompany.Companies.Any())
             {
+                stopwatch.Start();
                 _logger.LogInformation($"Obtendo dados de {_listedCompany.Companies.Count} empresas");
                 foreach (var company in _listedCompany.Companies)
                 {
                     var index = _listedCompany.Companies.IndexOf(company);
                     _logger.LogInformation($"Obtendo dados da empresa ({company.companyName}). Índice: {index}");
                     try
-                    { 
+                    {
                         _logger.LogInformation($"Empresa ({company.companyName}) obtida com sucesso. Índice: {index}");
                     }
                     catch (Exception ex)
@@ -48,7 +51,9 @@ namespace DataPush.Domain.Entities
                         throw new Exception($"Erro ao obter empresa ({company.cnpj}). Índice: {index}.", ex);
                     }
                 }
+                stopwatch.Stop();
             }
+            _logger.LogInformation($"Processo finalizado em {stopwatch.Elapsed.TotalSeconds} segundos");
             return _listedCompany.Companies;
         }
 

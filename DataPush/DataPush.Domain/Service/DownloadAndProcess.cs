@@ -1,6 +1,9 @@
-﻿using DataPush.Infra.Sql;
+﻿using DataPush.Domain.Repositories;
+using DataPush.Infra.Sql;
 using DataPush.Infra.Sql.Repositories;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -14,14 +17,17 @@ namespace DataPush.Domain.Entities
     public class DownloadAndProcess
     {
         private ListedCompany _listedCompany;
+        private readonly ApplicationContext _context;
         private readonly ILogger<DownloadAndProcess> _logger;
-        private readonly CompanyRepository _companyRepository;
+        private readonly ICompanyRepository _companyRepository;
         private const string _url = "https://sistemaswebb3-listados.b3.com.br/listedCompaniesProxy/CompanyCall";
 
-        public DownloadAndProcess(ILogger<DownloadAndProcess> logger)
+        public DownloadAndProcess(ICompanyRepository companyRepository)
         {
-            _companyRepository = new CompanyRepository(new ApplicationContext());
-            _logger = logger;
+            var options = new DbContextOptions<ApplicationContext>();
+            _context = new ApplicationContext(options);
+            _companyRepository = companyRepository;
+            _logger = GetLogger<DownloadAndProcess>();
         }
 
         public void Run()
@@ -90,5 +96,17 @@ namespace DataPush.Domain.Entities
 
         private static string JsonToEncodedString(object json) =>
             Convert.ToBase64String(Encoding.UTF8.GetBytes(JsonSerializer.Serialize(json)));
+
+        private static ILogger<TClass> GetLogger<TClass>()
+        {
+            var serilogLogger = new LoggerConfiguration()
+                .WriteTo.Console()
+                .CreateLogger();
+
+            var loggerFactory = new LoggerFactory()
+                .AddSerilog(serilogLogger)
+                .CreateLogger<TClass>();
+            return loggerFactory;
+        }
     }
 }

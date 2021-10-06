@@ -12,6 +12,5 @@ namespace DataPush.Domain.Entities
         public string tradingName { get; set; }
         public string cnpj { get; set; }
         public string segment { get; set; }
-        //public CompanyStock CompanyData { get; set; }
     }
 }

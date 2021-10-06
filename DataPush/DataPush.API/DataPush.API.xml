@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DataPush.API</name>
+    </assembly>
+    <members>
+        <member name="M:DataPush.API.Controllers.CompanyController.GetCompanies">
+            <summary>
+            Método que obtém todas as empresas listadas do site B3
+            B3 é a bolsa de valores oficial do Brasil
+            </summary>
+            <returns>Empresas</returns>
+        </member>
+        <member name="M:DataPush.API.Controllers.CompanyController.GetCompany(System.String)">
+            <summary>
+            Método que obtém uma empresa pelo código/cpnj
+            </summary>
+            <param name="code">Código da empresa</param>
+            <returns>Empresa</returns>
+        </member>
+        <member name="M:DataPush.API.Controllers.CompanyController.GetCompanyByFilter(System.String)">
+            <summary>
+            Método que obtém as empresas que contenham o nome passado
+            </summary>
+            <param name="name">Nome da empresa</param>
+            <returns>Empresas</returns>
+        </member>
+    </members>
+</doc>

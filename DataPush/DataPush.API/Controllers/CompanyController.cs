@@ -20,6 +20,20 @@ namespace DataPush.API.Controllers
         }
 
         /// <summary>
+        /// Método que obtém as empresas e popula o banco
+        /// </summary>
+        /// <returns>Mensagem</returns>
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [HttpPost("v1/companies")]
+        public IActionResult PostCompanies()
+        {
+            _companyRepository.DeleteAndCreateDatabase();
+            _downloadAndProcess.Run();
+            return Ok("Dados Salvos");
+        }
+
+        /// <summary>
         /// Método que obtém todas as empresas listadas do site B3
         /// B3 é a bolsa de valores oficial do Brasil
         /// </summary>
@@ -29,8 +43,6 @@ namespace DataPush.API.Controllers
         [HttpGet("v1/companies")]
         public IActionResult GetCompanies() 
         {
-            _companyRepository.DeleteAndCreateDatabase();
-            _downloadAndProcess.Run();
             var companies = _companyRepository.GetCompanies();
             return Ok(ParseToResult(companies));
         }

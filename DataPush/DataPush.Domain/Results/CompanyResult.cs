@@ -2,6 +2,7 @@
 {
     public record CompanyResult(
         string CompanyName,
+        string Cnpj,
         string Issuer,
         string TradingName,
         string Segment,

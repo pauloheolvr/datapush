@@ -23,7 +23,6 @@ namespace DataPush.Infra.Sql
         {
             base.OnConfiguring(builder);
             builder.UseSqlServer(connectionString);
-            builder.LogTo(Console.WriteLine, LogLevel.Information);
         }
     }
 }

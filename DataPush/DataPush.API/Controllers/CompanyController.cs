@@ -44,6 +44,7 @@ namespace DataPush.API.Controllers
         public IActionResult GetCompanies() 
         {
             var companies = _companyRepository.GetCompanies();
+            if (companies is null || !companies.Any()) return BadRequest("Empresas não encontradas");
             return Ok(ParseToResult(companies));
         }
 
@@ -84,6 +85,7 @@ namespace DataPush.API.Controllers
             if (company is null) return null;
             return new (
                 company.companyName,
+                company.cnpj,
                 company.issuingCompany,
                 company.tradingName,
                 company.segment,

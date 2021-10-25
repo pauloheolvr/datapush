@@ -6324,19 +6324,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\200203\\.nuget\\packages\\": {}
+    "C:\\Users\\Eliandro\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\workspace\\facens\\datapush\\DataPush\\DataPush.API\\DataPush.API.csproj",
+      "projectUniqueName": "C:\\Users\\Eliandro\\Desktop\\Facens\\Fabrica_de_projetos\\datapush\\DataPush\\DataPush.API\\DataPush.API.csproj",
       "projectName": "DataPush.API",
-      "projectPath": "C:\\workspace\\facens\\datapush\\DataPush\\DataPush.API\\DataPush.API.csproj",
-      "packagesPath": "C:\\Users\\200203\\.nuget\\packages\\",
-      "outputPath": "C:\\workspace\\facens\\datapush\\DataPush\\DataPush.API\\obj\\",
+      "projectPath": "C:\\Users\\Eliandro\\Desktop\\Facens\\Fabrica_de_projetos\\datapush\\DataPush\\DataPush.API\\DataPush.API.csproj",
+      "packagesPath": "C:\\Users\\Eliandro\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Eliandro\\Desktop\\Facens\\Fabrica_de_projetos\\datapush\\DataPush\\DataPush.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\200203\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Eliandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6350,8 +6350,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\workspace\\facens\\datapush\\DataPush\\DataPush.Domain\\DataPush.Domain.csproj": {
-              "projectPath": "C:\\workspace\\facens\\datapush\\DataPush\\DataPush.Domain\\DataPush.Domain.csproj"
+            "C:\\Users\\Eliandro\\Desktop\\Facens\\Fabrica_de_projetos\\datapush\\DataPush\\DataPush.Domain\\DataPush.Domain.csproj": {
+              "projectPath": "C:\\Users\\Eliandro\\Desktop\\Facens\\Fabrica_de_projetos\\datapush\\DataPush\\DataPush.Domain\\DataPush.Domain.csproj"
             }
           }
         }
@@ -6393,7 +6393,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

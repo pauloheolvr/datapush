@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = DataPush.Domain
-build_property.ProjectDir = C:\workspace\facens\datapush\DataPush\DataPush.Domain\
+build_property.ProjectDir = C:\Users\Eliandro\Desktop\Facens\Fabrica_de_projetos\datapush\DataPush\DataPush.Domain\

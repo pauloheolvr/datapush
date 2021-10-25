@@ -7,7 +7,7 @@ namespace DataPush.Infra.Sql
 {
     public class ApplicationContext : DbContext
     {
-        const string connectionString = "Data Source=localhost;Initial Catalog=Estudos;User Id=sa;Password=@Elifreitas0";
+        const string connectionString = "Server=DESKTOP-AGUEKFL;Database=Estudos;Trusted_Connection=True;";
 
         public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options)
         {

@@ -16,7 +16,8 @@ namespace DataPush.API
 {
     public class Startup
     {
-        const string connectionString = "Data Source=localhost;Initial Catalog=Estudos;User Id=sa;Password=@Elifreitas0";
+        const string connectionString = "Server=DESKTOP-AGUEKFL;Database=Estudos;Trusted_Connection=True;";
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
         public Startup(IConfiguration configuration)
         {
@@ -34,6 +35,14 @@ namespace DataPush.API
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "DataPush.API", Version = "v1" });
             });
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: MyAllowSpecificOrigins,
+                    builder =>
+                    {
+                        builder.WithOrigins("http://localhost:8080");
+                    });
+            });
             services.AddTransient<ICompanyRepository, CompanyRepository>();
         }
 
@@ -48,6 +57,8 @@ namespace DataPush.API
             }
 
             app.UseHttpsRedirection();
+
+            app.UseCors(MyAllowSpecificOrigins);
 
             app.UseRouting();
 
